@@ -51,7 +51,7 @@ document.getElementById("missionAbort").addEventListener("click", function() {
 });
 
 document.getElementById("left").addEventListener("click", function() {
-    if(Number(document.getElementById("rocket").style.left.slice(0, (document.getElementById("rocket").style.left.length-2)))>-320) {
+    if(Number(document.getElementById("rocket").style.left.slice(0, (document.getElementById("rocket").style.left.length-2)))>-180) {
     let oldPosition=Number(document.getElementById("rocket").style.left.slice(0, (document.getElementById("rocket").style.left.length-2)));
     console.log(oldPosition)
     let newPosition=oldPosition-10;
@@ -62,7 +62,7 @@ document.getElementById("left").addEventListener("click", function() {
 });
 
 document.getElementById("right").addEventListener("click", function() {
-    if(Number(document.getElementById("rocket").style.left.slice(0, (document.getElementById("rocket").style.left.length-2)))<320) {
+    if(Number(document.getElementById("rocket").style.left.slice(0, (document.getElementById("rocket").style.left.length-2)))<180) {
     oldPosition=Number(document.getElementById("rocket").style.left.slice(0, (document.getElementById("rocket").style.left.length-2)));
     console.log(oldPosition)
     newPosition=oldPosition+10;
