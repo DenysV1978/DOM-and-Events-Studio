@@ -24,12 +24,14 @@ buttonTakeOff.addEventListener("click", function(event) {
 });
 
 let buttonLanding=document.getElementById("landing");
-console.log(typeof buttonLanding);
+//console.log(typeof buttonLanding);
 buttonLanding.addEventListener("click", function(event) {
     window.alert("The shuttle is landing. Landing gear engaged.");
     document.getElementById("flightStatus").innerHTML="The shuttle has landed.";
     document.getElementById("shuttleBackground").style.backgroundColor="green";
     document.getElementById("spaceShuttleHeight").innerHTML=0;
+    document.getElementById("rocket").style.left="0px";
+    document.getElementById("rocket").style.top="255px";
 });
 
 document.getElementById("missionAbort").addEventListener("click", function() {
@@ -37,6 +39,10 @@ document.getElementById("missionAbort").addEventListener("click", function() {
         document.getElementById("flightStatus").innerHTML="Mission aborted.";
         document.getElementById("shuttleBackground").style.backgroundColor="green";
         document.getElementById("spaceShuttleHeight").innerHTML=0;
+        document.getElementById("rocket").style.left="0px";
+        document.getElementById("rocket").style.top="255px";
+
+
 
     };
 
